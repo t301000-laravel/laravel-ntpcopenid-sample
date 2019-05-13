@@ -24,6 +24,8 @@
         ]);
 
         $role = Role::create(['name' => '管理員', 'guard_name' => 'web']);
+        Role::create(['name' => '教師', 'guard_name' => 'web']);
+        Role::create(['name' => '學生', 'guard_name' => 'web']);
 
         $permission = Permission::create(['name' => '後台管理', 'guard_name' => 'web']);
 
